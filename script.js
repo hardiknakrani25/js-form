@@ -25,4 +25,9 @@ function getParams(){
             document.write("age = " + age + "<br>");
             document.write("phone = " + phone + "<br>");
             document.write("email = " + email + "<br>");
-            document.write("address = " + address + "<br>");
+
+// add regex for removing + sign and replace with space 
+var add=address.replace(/[^A-Z0-9]+/ig, " ");
+
+
+            document.write("address = " + add + "<br>");
